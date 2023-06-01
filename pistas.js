@@ -22,7 +22,7 @@ class pistas {
     set duracionpista(duraciones) {
         // Pedir duracion
         do {
-            duraciones = validarNumber("Ingrese la duración");
+            duraciones = validarNumber("Ingrese la duración (0 a 7200)");
         if (duraciones < 0 || duraciones > 7200) {
             alert("el valor ingresado está fuera del rango");
         } else {
