@@ -35,7 +35,7 @@ class discos {
         let code;
         do {
             // Pido string
-            code = prompt("ingrese el codigo");
+            code = parseInt(prompt("ingrese el codigo (1 a 999)"));
             if (arraycodigo.indexOf(code) != -1) {
                 alert("el codigo ya existe");
             }else if (isNaN(code) || code == "" || code < 1 || code > 999) {
